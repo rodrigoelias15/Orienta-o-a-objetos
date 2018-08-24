@@ -24,10 +24,26 @@ public class TesteEstoque {
         System.out.println(produto2.getQuantidadeAtual());
         produto3.baixaEstoque(4);
         System.out.println(produto3.getQuantidadeAtual());
+        
         if(produto1.precisaRepor())
             System.out.println("Precisa repor " + produto1.nome);
         else
             System.out.println("Nao precisa repor " + produto1.nome);
+        
+        if(produto2.precisaRepor())
+            System.out.println("Precisa repor " + produto2.nome);
+        else
+            System.out.println("Nao precisa repor " + produto2.nome);
+        
+        if(produto3.precisaRepor())
+            System.out.println("Precisa repor " + produto3.nome);
+        else
+            System.out.println("Nao precisa repor " + produto3.nome);
+        
+        if(produto4.precisaRepor())
+            System.out.println("Precisa repor " + produto4.nome);
+        else
+            System.out.println("Nao precisa repor " + produto4.nome);
     }
     
 }

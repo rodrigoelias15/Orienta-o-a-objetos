@@ -5,9 +5,6 @@
  */
 package batalha.naval;
 
-import java.util.Scanner;
-import java.util.function.Function;
-
 /**
  *
  * @author RODRIGO
@@ -18,19 +15,15 @@ public class Tabuleiro {
     int tam;        
     
     public Tabuleiro(int tam){
-        this.tam = tam;   
-        criaVetor();
-    }         
-    
-    void criaVetor(){
+        this.tam = tam; 
         int [] vet = new int [this.tam];
         for(int i=0; i<this.tam; i++)
             vet[i] = 0;
         posicaoNavio(this.tam, vet);
         for(int i=0; i<this.tam; i++)
-            System.out.print(vet[i]+" ");
-    }
-    
+            System.out.print(vet[i]+" ");        
+    }         
+       
     void posicaoNavio(int tam, int []tab){  
         int tam2 = tam-3;
         if(tam >= 3){  //tamanho do tabuleiro precisa ter mais que 3 posicoes pq navio ocupa 3 posicoes

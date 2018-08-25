@@ -10,12 +10,9 @@ package batalha.naval;
  * @author RODRIGO
  */
 public class BatalhaNaval {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here       
         Tabuleiro tab;
         tab = new Tabuleiro(10);
+    }
 }

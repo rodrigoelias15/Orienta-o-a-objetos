@@ -33,7 +33,7 @@ public class Tabuleiro {
     
     void posicaoNavio(int tam, int []tab){  
         int tam2 = tam-3;
-        if(tam >= 3){       //tamanho do tabuleiro precisa ter mais que 3 posicoes pq navio ocupa 3 posicoes
+        if(tam >= 3){  //tamanho do tabuleiro precisa ter mais que 3 posicoes pq navio ocupa 3 posicoes
             int x = (int)(Math.random()*tam2);            
             tab[x] = 1;
             tab[x+1] = 1;

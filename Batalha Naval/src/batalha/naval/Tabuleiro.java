@@ -12,16 +12,13 @@ package batalha.naval;
 
 public class Tabuleiro {       
     
-    int tam;        
+    int tam = 10;        //tamanho do vetor (tabuleiro)
+    int [] vet = new int [tam];
     
-    public Tabuleiro(int tam){
-        this.tam = tam; 
-        int [] vet = new int [this.tam];
+    public Tabuleiro(){                
         for(int i=0; i<this.tam; i++)
             vet[i] = 0;
-        posicaoNavio(this.tam, vet);
-        for(int i=0; i<this.tam; i++)
-            System.out.print(vet[i]+" ");        
+        posicaoNavio(this.tam, vet);   
     }         
        
     void posicaoNavio(int tam, int []tab){  
